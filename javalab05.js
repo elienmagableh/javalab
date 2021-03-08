@@ -2,7 +2,14 @@ var order = prompt("what kind of animal do you want ?");
 while (order != 'cat' && order != 'dog') {
     order = prompt("what do you want cat or dog ?");
 
-    var itemorder = '';
+var itemorder = '';
+
+
+}
+function imagefun () {
+  
+
+    
     if (order == "cat") {
         itemorder = '<img src="/Imagae/cat.jpg"/>';
 
@@ -11,17 +18,21 @@ while (order != 'cat' && order != 'dog') {
         itemorder = '<img src="/Imagae/dog.jpg"/>';
 
     }
-
-
-
 }
 
+imagefun();
+
+var picture =function () {
+
+    
 var numoforder = prompt("how many animal do you want?");
 var result = '';
+
 for (var i = 0; i < numoforder; i++) {
     // console.log(itemorder)
     result=result+itemorder;
-    
 }
-
 document.write(result);
+
+}
+picture();
